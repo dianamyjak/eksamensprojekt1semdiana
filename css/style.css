@@ -133,6 +133,7 @@ main {
 #logo {
     width: 50%;
     display: block;
+    
 }
 
 /*Jeg giver logoet 50% af forældrens 100%*/
@@ -158,17 +159,25 @@ header {
    
     max-width: 300px;
     padding: 10px;
+    
 }
 
 #logoTop img,
 #logoTopDesktop img {
     width: 80%;
+   text-align: center;
 }
 
 #menuPunkter #logoTopDesktop {
     display: none;
+ justify-content: center;
+    
 }
 
+
+.nav-link {
+    flex: 1; 
+}  
 /***********************************************/
 /********* stylesheet for konkurrence **************/
 
@@ -211,7 +220,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    margin-top: 80px;
+   
     
     
 }
@@ -221,11 +230,12 @@ label {
 
 #konkurrencetext {
     display: flex; 
-    flex-direction: column-reverse;
+    flex-direction:column ;
     text-align: center;
-    justify-content:space-around;
-    line-height: 40px; 
-    padding: 80px; 
+    justify-content:center;
+    line-height: 50px; 
+    padding: 50px; 
+    border: 10px; 
     
    
 
@@ -342,7 +352,10 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 300px 0;
+    padding: 10px ;
+    width: 380px;
+    opacity: 80%; 
+    
  
 }
 
@@ -359,8 +372,11 @@ label {
 }
 
 #textsugeror p {
-    margin: 1px;
+    margin: 2%;
     font-size: 20px;
+    text-align: center; 
+    padding: 25px 0; 
+     
     
 }
 
@@ -371,21 +387,17 @@ label {
     padding: 10px 20px;
     text-align: left;
     background-size: 100%;
-    justify-content: space-between;
     display: flex;
 }
 
 
-}
-.icons {
-    width: 40px;
-    display: block;
-    margin-right: 80px;
-}
+
 .footerlogo img {
-    width: 10%;
-    padding-left: 40px; 
+    width: 10%; 
     padding: 1px 10px; 
+    display: flex; 
+    align-items: center; 
+    
     
 }
 p {
@@ -438,15 +450,21 @@ p {
         padding-right: 70px;
     }
 
-    /*Vi tilpasser contact til tablet*/
+    /*Vi tilpasser KONKURRENCE til tablet*/
 
     #form {
         width: 300px;
     }
+     #sugerorBackground {
+        
+        max-width: 1200px;
+        width: 100%;
+    }
+    
 }
 
 
-}
+
 /***********************************************/
 /********* mediaquery til web ******************/
 
@@ -462,14 +480,16 @@ p {
 
     #menuPunkter #logoTopDesktop {
         display: block;
-        padding: 0;
+        padding: 10;
         width: 150px;
     }
 
     #menuPunkter #logoTopDesktop a {
-        display: block;
+        display: flex;
         margin: 0;
         padding: 0;
+        justify-content: center;
+        
     }
 
     #menu {
@@ -490,6 +510,7 @@ p {
 
     #menuPunkter a {
         color: black;
+        text-align: center; 
     }
     /*jeg tilpasser footer til web*/
 
@@ -515,11 +536,12 @@ p {
     /*jeg tilpasser sugeror til web*/
     #sugerorImage {
         display: block;
-        width: 40%;
+        width: 50%;
     }
 
     #textsugeror {
         width: 40%;
+      
     }
 
     #sugerorBackground {
@@ -589,4 +611,4 @@ p {
     #form {
     }
 
-    
+    }
